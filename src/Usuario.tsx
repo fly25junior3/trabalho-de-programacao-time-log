@@ -1,4 +1,4 @@
-class Usuario{
+export class Usuario{
     nome:string;
     private email:string;
     private senha:string;
@@ -33,4 +33,7 @@ class Usuario{
     getTarefas():object[]{
         return this.tarefas;
     };
-};
+    visualizarDashBord():void{
+
+    }
+}; 

@@ -1,3 +1,5 @@
+import { Usuario } from "./Usuario";
+
 function App() {
   
 
