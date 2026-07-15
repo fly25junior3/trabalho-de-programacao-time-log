@@ -32,6 +32,6 @@ class Timer {
     // TODO: Implement
   }
   definirMeta():void {
-    //TODO:Implemet
+    //TODO:Implemet`````````````
   }
 }
