@@ -42,7 +42,7 @@ export class Administrador extends Usuario {
     }
 }
       gerarRelatorio(): void {
-        if (this.nivelAcesso===1){
+        if (this.nivelAcesso>=1){
             //Gera um realtorio de erros
         }
        else {
