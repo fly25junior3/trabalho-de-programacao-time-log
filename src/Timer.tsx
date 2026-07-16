@@ -1,4 +1,4 @@
-class Timer {
+ export class Timer {
   inicio: Date;
   fim: Date;
   tempoAtual: number;

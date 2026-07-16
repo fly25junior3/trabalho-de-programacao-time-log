@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <h1>Ola mundo. Inicializando a porha do projeto, BOM DIA!</h1>
+    <h1>Ola mundo. Inicializando o projeto, BOM DIA!</h1>
     </>
   )
 }

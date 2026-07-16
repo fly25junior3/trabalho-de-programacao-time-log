@@ -1,4 +1,4 @@
-class Sessao {
+export class Sessao {
   //atividade: Atividade;
   data: Date;
   horaInicio: Date;

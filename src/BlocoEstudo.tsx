@@ -1,5 +1,5 @@
 
-class BlocoEstudo {
+export class BlocoEstudo {
   quantidadeBlocos: number;
   tempoBloco: number;
   tempoIntervalo: number;

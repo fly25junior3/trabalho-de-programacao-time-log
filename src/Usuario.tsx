@@ -1,39 +1,39 @@
-export class Usuario{
-    nome:string;
-    private email:string;
-    private senha:string;
-    tarefas:object[];
-    constructor(nome:string,  email:string, senha:string, tarefas:object[] = []) {
-        this.nome = nome;
-        this.email = email;
-        this.senha = senha;
-        this.tarefas = tarefas;
+export abstract class Usuario{
+    private _nome:string;
+    private _email:string;
+    private _senha:string;
+    private _id:number
+    constructor(nome:string,  email:string, senha:string) {
+        this._nome = nome;
+        this._email = email;
+        this._senha = senha;
+        this._id = Date.now() + Math.floor(Math.random() * 1000);
     };
+    
     setEmail(novoEmail:string):void{
-        this.email = novoEmail;
+        this._email = novoEmail;
     };
     getEmail():string{
-        return this.email;
+        return this._email;
     };
     setSenha(novaSenha:string):void{
-        this.senha = novaSenha;
+        this._senha = novaSenha;
     };
     getSenha():string{
-        return this.senha;
+        return this._senha;
     };
-    criarTarefa(tempoEmMin:number, nome:string):void{
-        this.tarefas.push(
-            {
-                tempoEmMin: tempoEmMin,
-                nome: nome
-            }
-        )
-    };
-
-    getTarefas():object[]{
-        return this.tarefas;
-    };
-    visualizarDashBord():void{
-
+    getId():number{
+        return this._id
     }
+    getNome(): string {
+    return this._nome;
+    }
+    setNome(novoNome: string): void {
+        this._nome = novoNome;
+    }
+    
+
+    abstract visualizarDashBord():void
+
+    
 }; 
