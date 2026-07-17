@@ -7,7 +7,7 @@ export abstract class Usuario{
         this._nome = nome;
         this._email = email;
         this._senha = senha;
-        this._id = Date.now() + Math.floor(Math.random() * 1000);
+        this._id = (Date.now() % 100000) + Math.floor(Math.random() * 1000);
     };
     
     setEmail(novoEmail:string):void{
